@@ -1,0 +1,34 @@
+<ul>
+<% @issue.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+<% end %>
+</ul>
+
+<%= form_for(@issue) do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  <br>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <br>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br>
+
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+  <br>
+
+  <%= f.label :map_url %>
+  <%= f.text_field :map_url %>
+  <br>
+
+  <%= f.submit %>
+<% end %>
