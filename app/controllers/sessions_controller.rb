@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by(username: params[:username])
-    if user.authenticate(params[:password]) #add line that checks if current user exists
+    if user.authenticate(params[:password])
       session[:current_user] = user.id
       redirect_to new_issue_path
     else

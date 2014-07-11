@@ -1,11 +1,14 @@
 <h2>Unprotected Landscapes Watch List</h2>
 
-<%= link_to 'Create a User Account to Add Unprotected Landscapes to our Watch List', new_issue_path %>
+<%= link_to 'Login', login_path %> |
+<%= link_to 'Sign Up', new_user_path %>
 
 <% @issues.each do |issue| %>
-  <p>
+  <a href="/issues/<%= issue.id %>">
+    <p>
     <b><%= issue.title %><b>
   </p>
+</a>
   <p>
     <%= issue.category %>
   </p>

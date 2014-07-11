@@ -11,3 +11,9 @@
 
   <%= submit_tag 'Log In' %>
 <% end %>
+<br>
+<p><%= link_to 'Back to Index', issues_path %></p>
+<% if session[:current_user]%>
+  <p><%= link_to "Logout", logout_path %></p>
+  <p><%= link_to "Delete Your User Account", issues_path %></p>
+  <% end %>

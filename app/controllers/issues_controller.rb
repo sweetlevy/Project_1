@@ -1,6 +1,6 @@
 class IssuesController < ApplicationController
 
-  before_action :authenticate, only: [:new, :create]
+  before_action :authenticate, only: [:new, :create, :update, :destroy]
 
   def index
     @issues = Issue.all
@@ -41,6 +41,7 @@ class IssuesController < ApplicationController
     @issue = Issue.find(params[:id])
     @issue.destroy
     redirect_to issues_path
+    #puts "The #{@issue.title} Page has been deleted."
   end
 
   private

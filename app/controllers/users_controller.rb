@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_action :authorize, only: [:edit, :update, :destroy]
+  before_action :authorize, only: [:update, :destroy]
 
   def new
     @user = User.new
@@ -22,10 +22,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
-    @user.destroy
+    user = User.find(params[:id])
+    user.destroy
     session[:current_user] = nil
-    redirect_to users_path
+    redirect_to issues_path
+    #puts "Your User Account has been deleted."
   end
 
   private

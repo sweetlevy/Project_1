@@ -1,0 +1,6 @@
+
+<%= render partial: 'issue', locals: { issue: @issue } %>
+<br>
+<%= link_to 'Delete This Page', @issue, method: :delete %> |
+<%= link_to 'Edit This Page', edit_issue_path(@issue) %> |
+<%= link_to 'Back To Index', issues_path %>

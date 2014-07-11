@@ -6,7 +6,7 @@ Issue.create(
   title: "Palisades Interstate Park Landscape",
   category: "Land-Use Development",
   location: "New York - New Jersey",
-  description: "Building development is planned.  Do something now before it's too late",
+  description: "Building development is planned.  Do something now before it's too late.",
   photo_url: "http://jschumacher.typepad.com/photos/uncategorized/2007/07/22/palisades.jpg",
   map_url: "https://mapsengine.google.com/map/embed?mid=zNDwlxlXF1eA.kosya3Q06QPw"
 )
