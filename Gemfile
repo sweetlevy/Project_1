@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '2.1.2'
+
+gem 'rake', '~> 10.3.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -43,7 +46,15 @@ group :development do
   gem 'shoulda-matchers', require: false
 end
 
+gem 'emmett', '~> 0.0.3'
+gem 'skeleton_rails', '~> 0.1.5'
+
+gem 'rails_12factor', '~> 0.0.2',        group: :production
+
 require 'pry'
+
+
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
