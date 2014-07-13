@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    session[:current_user] = @user.id # this line logs the user in
+    session[:current_user] = @user.id
     redirect_to new_issue_path
   end
 
@@ -26,7 +26,6 @@ class UsersController < ApplicationController
     user.destroy
     session[:current_user] = nil
     redirect_to issues_path
-    #puts "Your User Account has been deleted."
   end
 
   private

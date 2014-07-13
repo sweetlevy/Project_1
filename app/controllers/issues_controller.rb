@@ -41,7 +41,6 @@ class IssuesController < ApplicationController
     @issue = Issue.find(params[:id])
     @issue.destroy
     redirect_to issues_path
-    #puts "The #{@issue.title} Page has been deleted."
   end
 
   private

@@ -1,7 +1,13 @@
 <h2>Unprotected Landscapes Watch List</h2>
 
-<%= link_to 'Login', login_path %> |
-<%= link_to 'Sign Up', new_user_path %>
+<% if session[:current_user]%>
+  <p><%= link_to "Logout", logout_path %></p>
+<% else %>
+     <%= link_to 'Login', login_path %> |
+     <%= link_to 'Sign Up', new_user_path %>
+  <% end %>
+
+
 
 <% @issues.each do |issue| %>
   <a href="/issues/<%= issue.id %>">
