@@ -31,14 +31,13 @@ group :doc do
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+# gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
 # Use pry console in development
 gem 'pry-rails'
-require 'pry'
 
 # Use Capybara for Rails integration tests.
 gem 'capybara', '~> 2.4.1'
