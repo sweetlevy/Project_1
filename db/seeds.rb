@@ -1,5 +1,4 @@
-Issue.delete_all
-User.delete_all
+
 
 #Issues Data:
 Issue.create(
@@ -8,7 +7,7 @@ Issue.create(
   location: "New York - New Jersey",
   description: "Building development is planned.  Do something now before it's too late.",
   photo_url: "http://jschumacher.typepad.com/photos/uncategorized/2007/07/22/palisades.jpg",
-  map_url: "https://mapsengine.google.com/map/embed?mid=zNDwlxlXF1eA.kosya3Q06QPw"
+  map_url: "http://maps.google.com/maps/api/staticmap?center=Englewood+Cliffs,+NJ&zoom=8&size=512x512&maptype=satellite&sensor=false"
 )
 
 Issue.create(
