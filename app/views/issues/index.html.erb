@@ -5,24 +5,15 @@
 <% else %>
      <%= link_to 'Login', login_path %> |
      <%= link_to 'Sign Up', new_user_path %>
-  <% end %>
+<% end %>
 
 
 
 <% @issues.each do |issue| %>
   <a href="/issues/<%= issue.id %>">
-    <p>
-    <b><%= issue.title %><b>
-  </p>
-</a>
-  <p>
-    <%= issue.location %>
-  </p>
-  <p>
-    <%= image_tag issue.photo_url %>
-  </p>
-  <p>
-    <img src="<%= issue.map_url %>" width="425" height="350"</img>
-  </p>
-
+  <p><b><%= issue.title %><b></p>
+  </a>
+  <p><%= issue.location %></p>
+  <p><%= image_tag issue.photo_url %></p>
+  <p><img src="<%= issue.map_url %>" width="425" height="350"</img></p>
 <% end %>
