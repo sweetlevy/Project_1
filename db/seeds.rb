@@ -1,36 +1,34 @@
-
+Issue.destroy_all
+User.destroy_all
 
 #Issues Data:
 Issue.create(
-  title: "Palisades Interstate Park Landscape",
-  category: "Land-Use Development",
+  title: "Palisades Interstate Park",
   location: "New York - New Jersey",
   description: "Building development is planned.  Do something now before it's too late.",
   photo_url: "http://jschumacher.typepad.com/photos/uncategorized/2007/07/22/palisades.jpg",
-  map_url: "http://maps.google.com/maps/api/staticmap?center=Englewood+Cliffs,+NJ&zoom=8&size=512x512&maptype=satellite&sensor=false"
+  map_url: "http://maps.google.com/maps/api/staticmap?center=Fort+Lee,+NJ&zoom=12&size=400x400&scale=2&maptype=roadmap&sensor=false"
 )
 
 Issue.create(
-  title: "California Dreaming",
-  category: "Beach Go-ers",
-  location: "Malibu, CA",
-  description: "Beach go-ers want to preserve the landscape.",
-  photo_url: "http://www.seeing-stars.com/Images/Slides/Malibu2.JPG",
-  map_url: "https://mapsengine.google.com/map/embed?mid=zNDwlxlXF1eA.kosya3Q06QPw"
+  title: "Wissahickon Creek",
+  location: "Philadelphia, Pennsylvania",
+  description: "Watershed is in danger of creeping development. We want to keep it natural and pristine.",
+  photo_url: "http://www.phillywatersheds.org/sites/default/files/WissahickonGlamourShot.jpg",
+  map_url: "http://maps.google.com/maps/api/staticmap?center=Wissahickon+Creek,+PA&zoom=10&size=400x400&scale=2&maptype=roadmap&sensor=false"
 )
 
 Issue.create(
-  title: "Oregon Mountains",
-  category: "Preservers Are Us",
-  location: "Portland, OR",
-  description: "Oregonians save the turtles.",
-  photo_url: "http://www.oregoncoast101.com/images/oregon_coast.jpg",
-  map_url: "https://mapsengine.google.com/map/embed?mid=zNDwlxlXF1eA.kosya3Q06QPw"
+  title: "Kulkill Dessert",
+  location: "Pheonix, AZ",
+  description: "   .",
+  photo_url: "http://www.haaretz.com/polopoly_fs/1.566903.1388741516!/image/3910734969.png_gen/derivatives/landscape_640/3910734969.png",
+  map_url: "http://maps.google.com/maps/api/staticmap?center=Pheonix,+AZ&zoom=11&size=400x400&scale=2&maptype=roadmap&sensor=false"
 )
 
 #User Data:
 User.create(
-  username: "Sarafina",
+  username: "Sara",
   first_name: "Sara",
   last_name: "Kent",
   password: 'abc',
