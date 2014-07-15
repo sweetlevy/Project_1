@@ -22,6 +22,9 @@ class IssuesController < ApplicationController
 
   def edit
     @issue = Issue.find(params[:id])
+    if @issue.user != current_user
+      redirect_to issues_path
+    end
   end
 
   def show
@@ -30,6 +33,9 @@ class IssuesController < ApplicationController
 
   def update
     @issue = Issue.find(params[:id])
+    if @issue.user != current_user
+      redirect_to issues_path
+    end
     if @issue.update(issue_params)
       redirect_to issue_path(@issue)
     else
@@ -39,6 +45,9 @@ class IssuesController < ApplicationController
 
   def destroy
     @issue = Issue.find(params[:id])
+    if @issue.user != current_user
+      redirect_to issues_path
+    end
     @issue.destroy
     redirect_to issues_path
   end

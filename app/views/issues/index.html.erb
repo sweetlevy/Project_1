@@ -17,3 +17,10 @@
   <p><%= image_tag issue.photo_url %></p>
   <p><img src="<%= issue.map_url %>" width="425" height="350"</img></p>
 <% end %>
+
+<% if session[:current_user] %>
+  <p>
+    Want to delete your account?
+    <%= link_to 'Delete My Account', current_user, method: :delete, data: {confirm: 'Are you sure you want to delete your account?'} %>
+  </p>
+<% end %>

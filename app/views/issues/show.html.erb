@@ -2,8 +2,10 @@
 <br>
 <% if session[:current_user]%>
   <ul>
-    <%=link_to  'Delete This Page', @issue, method: :delete %> |
-    <%= link_to 'Edit This Page', edit_issue_path(@issue) %> |
+    <% if @issue.user == current_user %>
+      <%= link_to  'Delete This Page', @issue, method: :delete %> |
+      <%= link_to 'Edit This Page', edit_issue_path(@issue) %> |
+    <% end %>
     <%= link_to 'Back To Index', issues_path %>
   </ul>
   <br>
