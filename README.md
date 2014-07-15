@@ -21,5 +21,11 @@ application/website and will be able to login to the application/website on thei
 signed up for an account will also be able to delete their user account.  At this time, the issue that
 they created will not be deleted when their user account is deleted and no other user will be able to
 edit and delete the issue once the user that created it no longer exists.  In the future, the goal is to have
-an administrator user be able to edit and delete all issues created by all users for the purpose of needing to 
+an administrator user be able to edit and delete all issues created by all users for the purpose of needing to
 edit and delete an issue created by a user that no longer exists or has deleted their account.
+
+********************************************************************************
+
+Link to the Heroku-hosted site for this application:
+
+http://landscape-watchlist.herokuapp.com/issues
