@@ -7,7 +7,7 @@ purposes of the development and testing of this application.
 ********************************************************************************
 
 The purpose of this application is to be an Unprotected Landscape WatchList for natural areas near
-urban and suburban developments in the United States that are not protected under federal, state or local
+urban and suburban developments in the United States that are not permanently protected under federal, state or local
 land-use laws. The goal of the application/website is to have concerned citizens be able to publicize the
 often unknown unprotected status of these natural areas or landscapes so that they can be monitored against
 threats of impending developments.
