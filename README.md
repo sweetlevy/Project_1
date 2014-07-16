@@ -29,3 +29,9 @@ edit and delete an issue created by a user that no longer exists or has deleted 
 Link to the Heroku-hosted site for this application:
 
 http://landscape-watchlist.herokuapp.com/issues
+
+********************************************************************************
+
+Link to Trello board/work board containing user stories:  
+
+https://trello.com/b/dC6r1l1i/sarit-levy-project-1
