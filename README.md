@@ -35,3 +35,11 @@ http://landscape-watchlist.herokuapp.com/issues
 Link to Trello board/work board containing user stories:  
 
 https://trello.com/b/dC6r1l1i/sarit-levy-project-1
+
+********************************************************************************
+
+Link to ERD (Entity Relational Diagram) on lucidchart.com (My ERD is also attached to one of the cards on my Trello Board): 
+
+http://www.lucidchart.com/invitations/accept/4d34c79a-c46c-49fa-99d8-5cf7b93b1320
+
+*Note that this ERD has not been updated to reflect the User class and its relationship with the Issue class.
