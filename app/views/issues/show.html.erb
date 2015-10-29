@@ -1,16 +1,12 @@
+<%= link_to 'Back To Index', issues_path %>
+
 <%= render partial: 'issue', locals: { issue: @issue } %>
 <br>
 <% if session[:current_user]%>
-  <ul>
     <% if @issue.user == current_user %>
-      <%= link_to  'Delete This Page', @issue, method: :delete %> |
+      <%= link_to 'Delete This Page', @issue, method: :delete %> |
       <%= link_to 'Edit This Page', edit_issue_path(@issue) %> |
     <% end %>
-    <%= link_to 'Back To Index', issues_path %>
-  </ul>
-  <br>
-  <p><%= link_to "Logout", logout_path %></p>
-<% else %>
-    <%= link_to 'Back To Index', issues_path %>
-  <br>
 <% end %>
+
+<%= link_to 'Back To Index', issues_path %>

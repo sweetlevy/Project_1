@@ -11,7 +11,7 @@ gem 'pg',             group: :production
 gem 'rails_12factor',        group: :production
 
 # Use SCSS for stylesheets
-gem 'sass-rails'
+# gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .js.coffee assets and views
@@ -37,20 +37,20 @@ end
 gem 'bcrypt', '~> 3.1.7'
 
 # Use pry console in development
-gem 'pry-rails'
+# gem 'pry-rails'
 
 # Use Capybara for Rails integration tests.
-gem 'capybara', '~> 2.4.1'
+# gem 'capybara', '~> 2.4.1'
 
 # Use rspec for Behavior Driven Development for ruby
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
 end
 
-group :development do
-  gem 'rspec-collection_matchers'
-  gem 'shoulda-matchers', require: false
-end
+# group :development do
+#   gem 'rspec-collection_matchers'
+#   gem 'shoulda-matchers', require: false
+# end
 
 
 # Use unicorn as the app server
